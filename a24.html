@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerult24 Gallery</title>
-<link rel="stylesheet" href="a24.css">
+    <link rel="stylesheet" href="a24.css">
+    <style>
+       
+    </style>
 </head>
 <body>
 
@@ -13,17 +16,36 @@
 </header>
 
 <div id="gallery">
-    <img src="01.jpg" alt="Photo 1">
-    <img src="02.jpg" alt="Photo 2">
-    <img src="03.jpg" alt="Photo 2">
-    <img src="04.jpg" alt="Photo 2">
-    <img src="05.jpg" alt="Photo 2">
-    <img src="06.jpg" alt="Photo 2">
-    <img src="07.jpg" alt="Photo 2">
-    <img src="08.jpg" alt="Photo 2">
-    <img src="09.jpg" alt="Photo 2">
-
+    <img src="01.jpg" alt="Kajal 01" onclick="openModal('01.jpg')">
+    <img src="02.jpg" alt="Photo 1" onclick="openModal('02.jpg')">
+    <img src="03.jpg" alt="Photo 2" onclick="openModal('03.jpg')">
+    <img src="04.jpg" alt="Photo 3" onclick="openModal('04.jpg')">
+    <img src="05.jpg" alt="Photo 4" onclick="openModal('05.jpg')">
+    <img src="06.jpg" alt="Photo 5" onclick="openModal('06.jpg')">
+    <img src="07.jpg" alt="Photo 6" onclick="openModal('07.jpg')">
+    <img src="08.jpg" alt="Photo 7" onclick="openModal('08.jpg')">
+    <img src="09.jpg" alt="Photo 8" onclick="openModal('09.jpg')">
 </div>
+
+<!-- The Modal -->
+<div id="myModal">
+    <span id="closeBtn" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="Full Screen View">
+</div>
+
+<script>
+    function openModal(imgSrc) {
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('modalImg');
+
+        modal.style.display = 'flex';
+        modalImg.src = imgSrc;
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
