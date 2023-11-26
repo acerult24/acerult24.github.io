@@ -1,6 +1,6 @@
 # acerult24.github.io
 Actresses' moments, all in one spot. Acerult24
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
